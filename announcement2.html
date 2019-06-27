@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <p class="title">采购申请管理平台</p>
+        <div class="right">
+            <div class="headImg">
+                <img src="images/2weima.png" alt="">
+            </div>
+            <p>欢迎您，<span>admin</span></p>
+            <a href="">
+                <p>
+                    <img src="images/WechatIMG455.png" alt="">
+                    <span>退出</span>
+                </p>
+            </a>
+        </div>
+    </header>
+
+    <div class="box">
+        <div class="nav">
+            <img src="images/s-tb-s2@2x.png" alt="">
+            <span>当前位置 > 发布公告</span>
+        </div>
+        <div class="menu">
+            <a href="javascript:" class="item">
+                <span class="left"></span>
+                <span class="center">首页</span>
+                <span class="right"></span>
+            </a>
+            <a href="javascript:" class="item ">
+                <span class="left"></span>
+                <span class="center">正在进行</span>
+                <span class="right"></span>
+            </a>
+            <a href="javascript:" class="item ">
+                <span class="left"></span>
+                <span class="center">历史采购</span>
+                <span class="right"></span>
+            </a>
+            <a href="javascript:" class="item">
+                <span class="left"></span>
+                <span class="center">数据报表</span>
+                <span class="right"></span>
+            </a>
+            <a href="javascript:" class="item select">
+                <span class="left"></span>
+                <span class="center">发布公告</span>
+                <span class="right"></span>
+            </a>
+    
+        </div>
+        
+        <div class="conn">
+            <div class="conn1">
+                <div class="txt1">
+                    <dl>
+                        <dt>公告标题：</dt>
+                        <dd>公告时间：</dd>
+                    </dl>
+                    <dl>
+                        <dt>测试标题</dt>
+                        <dd>2019-05-25</dd>
+                    </dl>
+                </div>
+                <div class="txt2">
+                    <span>公告内容：</span>
+                    <textarea name="" id="" cols="30" rows="10"> 公告详情</textarea>
+                </div>
+    
+                <div class="ttn2">
+                    <button>关 闭</button>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    
+    <footer>
+        <p>
+            <img src="images/WechatIMG458.png" alt="">
+            <span>采购管理系统</span>
+        </p>
+        <p>
+            <span>版权所有</span>
+            <img src="images/WechatIMG461.pic" alt="">
+        </p>
+    </footer>
+
+
+
+    <!-- 侧边栏切换 -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        // menu的切换
+        $('.box .menu a').click(function () {
+            // 清楚所有a标签的样式
+            $('.box .menu a').removeClass('select')
+            // 添加样式
+            $(this).addClass('select')
+        })
+    </script>
+    
+</body>
+</html>

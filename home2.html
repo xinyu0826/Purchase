@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <p class="title">采购申请管理平台</p>
+        <div class="right">
+            <div class="headImg">
+                <img src="images/2weima.png" alt="">
+            </div>
+            <p>欢迎您，<span>admin</span></p>
+            <a href="">
+                <p>
+                    <img src="images/WechatIMG455.png" alt="">
+                    <span>退出</span>
+                </p>
+            </a>
+        </div>
+    </header>
+
+
+
+    <div class="box">
+        <div class="nav">
+            <img src="images/s-tb-s2@2x.png" alt="">
+            <span>当前位置 > 首页 > 未处理</span>
+        </div>
+        <div class="menu">
+            <a href="javascript:" class="item select">
+                <span class="left"></span>
+                <span class="center">首页</span>
+                <span class="right"></span>
+            </a>
+            <a href="javascript:" class="item ">
+                <span class="left"></span>
+                <span class="center">正在进行</span>
+                <span class="right"></span>
+            </a>
+            <a href="javascript:" class="item ">
+                <span class="left"></span>
+                <span class="center">历史采购</span>
+                <span class="right"></span>
+            </a>
+            <a href="javascript:" class="item">
+                <span class="left"></span>
+                <span class="center">数据报表</span>
+                <span class="right"></span>
+            </a>
+            <a href="javascript:" class="item">
+                <span class="left"></span>
+                <span class="center">发布公告</span>
+                <span class="right"></span>
+            </a>
+    
+        </div>
+
+        <div class="content">
+            <!-- 步骤条 -->
+            <div id="steps2">
+                <el-steps :active="stepVal3">
+                    <el-step title="采购任务" description=""></el-step>
+                    <el-step title="职能部门" description=""></el-step>
+                    <el-step title="计划经营部" description=""></el-step>
+                    <el-step title="业务分管公司领导" description=""></el-step>
+                    <el-step title="分管采购公司领导" description=""></el-step>
+                    <el-step title="总经理" description=""></el-step>
+                </el-steps>
+                <!-- <span class="s1">X</span>
+                <span class="s2">X</span>
+                <span class="s3">X</span>
+                <span class="s4">X</span> -->
+            </div>
+
+            <!-- 退回备注 -->
+            <div class="quit">
+                <h2>退回备注</h2>
+                <div class="quitone clearfix">
+                    <dl style="margin-right: 140px;">
+                        <dt><span index="1" class="dot dot_in"></span></dt>
+                        <dd><span index="2" class="dot"></span></dd>
+                    </dl>
+                    <dl style="margin-right: 140px;">
+                        <dt>返回部门：</dt>
+                        <dd>返回部门：</dd>
+                    </dl>
+                    <dl style="margin-right: 140px;">
+                        <dt>退换内容测试</dt>
+                        <dd>退换内容测试</dd>
+                    </dl>
+                </div>
+            </div>
+
+            <!-- 我的待办任务 -->
+            <div class="task home2Task">
+                <h2>我的待办任务</h2>
+                <div class="listone clearfix">
+                    <dl>
+                        <dt>项目公司：</dt>
+                        <dd>项目名称：</dd>
+                    </dl>
+                    <dl>
+                        <dt>需求部门：</dt>
+                        <dd>费用渠道：</dd>
+                    </dl>
+                    <dl>
+                        <dt>编 号：</dt>
+                        <dd>预算内/外：</dd>
+                    </dl>
+                </div>
+
+                <div class="listtwo clearfix">
+                    <dl>
+                        <dt>物资名称：</dt>
+                        <dd>数  量：</dd>
+                        <dd>概算合计：</dd>
+                    </dl>
+                    <dl>
+                        <dt>规格型号：</dt>
+                        <dd>概算单位（元）：</dd>
+                        <dd>计划到货时间：</dd>
+                    </dl>
+                    <dl>
+                        <dt>计量单位：</dt>
+                        <dd>小  计：</dd>
+                    </dl>
+                </div>
+
+
+                <p class="home_radio">
+                    <span index="1" class="dot dot_in"></span>
+                    <span>技术要求简单、标准统一、有确定规格型号的物资</span>
+                </p>
+                <!-- 采购备注 -->
+                <div class="remarks">
+                    <span>采购备注:</span>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <!-- 主要技术要求 -->
+                <div class="remarks">
+                    <span>主要技术要求:</span>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                    <div class="upFile_box">
+                        <span class="">查看附件</span>
+<!--                        <input class="upFile_btn2" type="file">-->
+                    </div>
+                    
+                </div>
+
+                <!-- 主要商务要求建议 -->
+                <div class="remarks">
+                    <span>主要商务要求建议:</span>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                    <div class="upFile_box">
+                        <span class="">查看附件</span>
+<!--                        <input class="upFile_btn2" type="file">-->
+                    </div>
+
+
+                </div>
+
+                <div class="bttn">
+                    <button>提 交</button>
+                    <button>取 消</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        <p>
+            <img src="images/WechatIMG458.png" alt="">
+            <span>采购管理系统</span>
+        </p>
+        <p>
+            <span>版权所有</span>
+            <img src="images/WechatIMG461.pic" alt="">
+        </p>
+    </footer>
+
+
+    <!-- 侧边栏切换 -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+
+    <script>
+        // menu的切换
+        $('.box .menu a').click(function () {
+            // 清楚所有a标签的样式
+            $('.box .menu a').removeClass('select')
+            // 添加样式
+            $(this).addClass('select')
+        })
+
+
+        
+    </script>
+    <script>
+        $(".quitone").on("click", ".dot", function () {
+            $(this).toggleClass("dot_in");
+            if($(this).attr("class").length>7){
+                console.log("选中", $(this).attr("index"));
+            }
+        });
+        $(".home_radio").on("click", ".dot", function () {
+            $(this).toggleClass("dot_in");
+            if($(this).attr("class").length>7){
+                console.log("选中", $(this).attr("index"));
+            }
+        });
+
+
+    </script>
+
+
+    <script type="text/javascript" src="js/vue.min.js" ></script>
+    <script type="text/javascript" src="js/element.min.js" ></script>
+    <script type="text/javascript">
+        new Vue({
+            el: '#steps2',
+            data: {
+                stepVal3: 1,
+            },
+            methods: {
+                next() {
+                    if (this.stepVal1++ > 2) this.stepVal1 = 0;
+                }
+            }
+        })
+    </script>
+
+    
+</body>
+</html>
